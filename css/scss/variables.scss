@@ -1,4 +1,6 @@
-$light: #ffffff;
+// Colors
+$white: #ffffff;
+$light: #f2f2f2;
 $dark-1: #333333;
 $dark-2: #313131;
 $dark-3: #262626;
@@ -7,8 +9,8 @@ $gray-2: #4f4f4f;
 $color2: #ff7700;
 $color3: #f10a0a;
 $color4: #3357f8;
-$color2: #f2f2f2;
 
+// Typography
 @mixin big-title {
   font-style: normal;
   font-weight: 700;
@@ -88,4 +90,11 @@ $color2: #f2f2f2;
   font-size: 0.562rem;
   line-height: 150%;
   letter-spacing: 0.04em;
+}
+
+// Form elements
+@mixin default-input {
+  @include endnote;
+  border: 1px solid #949494;
+  padding: 8px 16px;
 }
