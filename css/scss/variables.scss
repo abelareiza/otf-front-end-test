@@ -10,8 +10,43 @@ $accent: #f10a0a;
 $primary: #3357f8;
 $secondary: #ff7700;
 
-// Typography
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+
+// Font families
+@font-face {
+  font-family: Gotham;
+  src: url(../assets/fonts/Gotham/Gotham-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../assets/fonts/Gotham/Gotham-Book.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../assets/fonts/Gotham/Gotham-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../assets/fonts/Gotham/Gotham-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Typography sizes
 @mixin big-title {
+  font-family: Gotham, sans-serif;
   font-size: 3.438rem;
   font-style: normal;
   font-weight: 700;

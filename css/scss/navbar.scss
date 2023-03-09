@@ -4,10 +4,16 @@
   justify-content: space-between;
   column-gap: 3rem;
   background-color: $white;
-  padding: 20px 100px;
+  padding: 20px;
+  max-width: 1210px;
+  margin: 0 auto;
 
   &-logo {
     width: 85px;
+
+    img {
+      width: 100%;
+    }
   }
 
   &-content {
@@ -25,7 +31,13 @@
   &-options {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     column-gap: 2rem;
+    row-gap: 1rem;
+
+    &--mobile {
+      display: none;
+    }
 
     a {
       @include nav-link;
@@ -37,6 +49,83 @@
       &:hover {
         border-bottom: 2px solid $dark-3;
       }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .main-nav {
+    &-logo {
+      flex-shrink: 0;
+      width: 60px;
+    }
+
+    &-options {
+      display: none;
+
+      &--mobile {
+        display: block;
+
+        #mobileMenuModal {
+          .modal-dialog {
+            border-radius: 0;
+            height: 90vh;
+            height: 100svh;
+            margin: 0 0 0 auto;
+            width: 65%;
+          }
+
+          .modal-content {
+            border-radius: 0;
+            height: 100%;
+          }
+
+          .modal-header {
+            border: none;
+            justify-content: flex-end;
+            padding: 57px 20px 20px;
+          }
+
+          .modal-body {
+            padding: 20px;
+          }
+        }
+
+        .mobile-menu {
+          display: flex;
+          flex-direction: column;
+
+          &-open-button {
+            background-color: transparent;
+            border: none;
+          }
+
+          &-close-button {
+            background-color: transparent;
+            border: none;
+          }
+
+          &-item {
+            @include nav-link;
+            color: $dark-3;
+            text-decoration: none;
+            border-bottom: 1px solid $gray-2;
+            padding: 1.5rem 1rem 0.5rem;
+
+            &:nth-child(2n) {
+              // background-color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .main-nav {
+    &-logo {
+      width: 48px;
     }
   }
 }

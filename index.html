@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTF Front Test by Abel</title>
     <link rel="stylesheet" href="css/site.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <header>
       <nav class="main-nav">
-        <img src="assets/svg/main-logo.svg" alt="" class="main-nav-logo" />
+        <a href="index.html" class="main-nav-logo">
+          <img src="assets/svg/main-logo.svg" alt="Logo" />
+        </a>
         <div class="main-nav-content">
           <div class="main-nav-social-icons">
             <a href="#" class="social-icon">
@@ -43,60 +51,113 @@
             <a href="#">Lorem ipsum</a>
             <a href="#">Lorem</a>
           </div>
+          <div class="main-nav-options--mobile">
+            <button
+              role="button"
+              type="button"
+              class="mobile-menu-open-button"
+              data-bs-toggle="modal"
+              data-bs-target="#mobileMenuModal"
+            >
+              <img
+                src="assets/svg/menu-icon.svg"
+                alt="Open mobile menu button"
+              />
+            </button>
+            <div
+              class="modal fade"
+              id="mobileMenuModal"
+              tabindex="-1"
+              aria-labelledby="mobileMenuModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="mobile-menu-close-button"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <img
+                        src="assets/svg/close-icon.svg"
+                        alt="Close mobile menu button"
+                      />
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mobile-menu">
+                      <a class="mobile-menu-item" href="#">Lorem ipsum </a>
+                      <a class="mobile-menu-item" href="#">Lorem ipsum </a>
+                      <a class="mobile-menu-item" href="#">Lorem </a>
+                      <a class="mobile-menu-item" href="#">Lorem ipsum </a>
+                      <a class="mobile-menu-item" href="#">Lorem ipsum </a>
+                      <a class="mobile-menu-item" href="#">Lorem </a>
+                      <a class="mobile-menu-item" href="#">Lorem ipsum </a>
+                      <a class="mobile-menu-item" href="#">Lorem </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div class="banner-container">
-          <div class="banner-content">
-            <h1>Title goes here</h1>
-            <h4>Subhead goes here</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh diam
-              massa aenean tortor euismod auctor faucibus eget eget. Amet
-              consequat pharetra feugiat egestas pellentesque iaculis. Lorem
-              nunc phasellus tellus mattis. Risus duis et non ac gravida amet
-              adipiscing.
-            </p>
+        <div class="container">
+          <div class="banner-container">
+            <div class="banner-content">
+              <h1>Title goes here</h1>
+              <h4>Subhead goes here</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+                diam massa aenean tortor euismod auctor faucibus eget eget. Amet
+                consequat pharetra feugiat egestas pellentesque iaculis. Lorem
+                nunc phasellus tellus mattis. Risus duis et non ac gravida amet
+                adipiscing.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="form-container">
-          <div class="form-content">
-            <h5>Lorem ipsum dolor sit</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <form action="/" method="POST">
-              <input
-                type="text"
-                name="textInput"
-                id="textInput"
-                placeholder="Placeholder *"
-              />
-              <select name="selectExample" id="selectExample">
-                <option value="00" selected disabled>Placeholder *</option>
-                <option value="01">Option 1</option>
-                <option value="02">Option 2</option>
-                <option value="03">Option 3</option>
-              </select>
-              <input type="date" name="dateInput" id="dateInput" />
-              <textarea
-                name="textareaInput"
-                id="textareaInput"
-                rows="5"
-                placeholder="Placeholder *"
-              ></textarea>
-              <div class="terms-input">
-                <input type="checkbox" name="terms" id="terms" />
-                <span class="checkmark"></span>
-                <label for="terms">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </label>
-              </div>
-              <button type="submit" role="button" class="button-primary">
-                Submit
-              </button>
-            </form>
+          <div class="form-container">
+            <div class="form-content">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <form action="/" method="POST">
+                <input
+                  type="text"
+                  name="textInput"
+                  id="textInput"
+                  placeholder="Placeholder *"
+                />
+                <select name="selectExample" id="selectExample">
+                  <option value="00" selected disabled>Placeholder *</option>
+                  <option value="01">Option 1</option>
+                  <option value="02">Option 2</option>
+                  <option value="03">Option 3</option>
+                </select>
+                <input type="date" name="dateInput" id="dateInput" />
+                <textarea
+                  name="textareaInput"
+                  id="textareaInput"
+                  rows="5"
+                  placeholder="Placeholder *"
+                ></textarea>
+                <div class="terms-input">
+                  <input type="checkbox" name="terms" id="terms" />
+                  <span class="checkmark"></span>
+                  <label for="terms">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </label>
+                </div>
+                <button type="submit" role="button" class="button-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -247,9 +308,9 @@
     <footer>
       <div class="container">
         <div class="footer-column">
-          <div class="footer-logo">
+          <a href="/" class="footer-logo">
             <img src="assets/svg/footer-logo.svg" alt="" />
-          </div>
+          </a>
           <p class="footer-info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh diam
             massa aenean tortor euismod auctor faucibus eget eget.
@@ -300,5 +361,11 @@
       <a href="#" class="footer-item">Legal & policy</a>
       <a href="#" class="footer-item">Copyright</a>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
