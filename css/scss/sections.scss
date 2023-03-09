@@ -1,0 +1,240 @@
+.info-img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/png/bg-pattern-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    .info {
+      padding: 20px;
+      width: 50%;
+      max-width: 600px;
+
+      h3 {
+        @include subheading-1;
+        color: $accent;
+        margin-bottom: 21px;
+      }
+
+      p {
+        @include body-text;
+        color: $dark-1;
+      }
+    }
+
+    .img-container {
+      width: 50%;
+      max-width: 550px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#laptop-section {
+  background-image: url("/assets/png/bg-pattern-3.png");
+  height: 600px;
+  margin-top: 167px;
+  margin-bottom: 25px;
+
+  .container {
+    .img-container {
+      margin-top: -7rem;
+    }
+  }
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/png/bg-pattern-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+
+  .video {
+    position: relative;
+    width: 50%;
+    margin-bottom: -7.5rem;
+
+    &-preview {
+      max-width: 550px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .video-custom-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    .info {
+      padding: 1.5rem;
+      width: 50%;
+      max-width: 600px;
+
+      h3 {
+        @include subheading-1;
+        color: $white;
+        margin-bottom: 21px;
+      }
+
+      p {
+        @include body-text;
+        color: $white;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+.statistics-section {
+  display: grid;
+  place-items: center;
+  background-color: $primary;
+  min-height: 400px;
+  margin-bottom: 21px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .statistics-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    color: $white;
+    max-width: 350px;
+    padding: 24px;
+    text-align: center;
+
+    &-img {
+      width: 100px;
+    }
+
+    &-number {
+      @include big-numbers;
+    }
+
+    &-info {
+      @include body-text;
+    }
+  }
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/png/bg-pattern-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 130px;
+    flex-wrap: wrap;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background-color: $white;
+      max-width: 368px;
+
+      &-img {
+        width: 100%;
+      }
+
+      &-body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        padding: 48px 24px;
+      }
+
+      &-title {
+        @include subheading-2;
+        color: $gray-2;
+      }
+
+      &-text {
+        @include caption;
+        color: $gray-2;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    .cta {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-image: url("/assets/png/cta-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      height: 500px;
+      width: 500px;
+      padding: 2rem;
+
+      &-gradient-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          360deg,
+          rgba(0, 0, 0, 0.2) 54.19%,
+          rgba(0, 0, 0, 0) 99.03%
+        );
+        z-index: 0;
+      }
+
+      &-content {
+        z-index: 1;
+      }
+
+      &-title {
+        @include subheading-1;
+        max-width: 436px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

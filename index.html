@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTF Front Test by Abel</title>
-    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="css/site.css" />
   </head>
 
   <body>
     <header>
       <nav class="main-nav">
-        <img src="" alt="" class="main-nav-logo" />
-        <div class="main-nav-social-icons">
-          <a href="#" class="social-icon">
-            <img src="" alt="LikedIn Icon" />
-          </a>
-          <a href="#" class="social-icon">
-            <img src="" alt="Facebook Icon" />
-          </a>
-          <a href="#" class="social-icon">
-            <img src="" alt="Instagram Icon" />
-          </a>
-        </div>
-        <div class="main-nav-options">
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
+        <img src="assets/svg/main-logo.svg" alt="" class="main-nav-logo" />
+        <div class="main-nav-content">
+          <div class="main-nav-social-icons">
+            <a href="#" class="social-icon">
+              <img
+                src="assets/svg/social-icons-color/linkedin.svg"
+                alt="LikedIn Link"
+              />
+            </a>
+            <a href="#" class="social-icon">
+              <img
+                src="assets/svg/social-icons-color/fb.svg"
+                alt="Facebook Link"
+              />
+            </a>
+            <a href="#" class="social-icon">
+              <img
+                src="assets/svg/social-icons-color/ig.svg"
+                alt="Instagram Link"
+              />
+            </a>
+          </div>
+          <div class="main-nav-options">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -55,24 +66,38 @@
           <div class="form-content">
             <h5>Lorem ipsum dolor sit</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form action="/" method="POST">
+              <input
+                type="text"
+                name="textInput"
+                id="textInput"
+                placeholder="Placeholder *"
+              />
+              <select name="selectExample" id="selectExample">
+                <option value="00" selected disabled>Placeholder *</option>
+                <option value="01">Option 1</option>
+                <option value="02">Option 2</option>
+                <option value="03">Option 3</option>
+              </select>
+              <input type="date" name="dateInput" id="dateInput" />
+              <textarea
+                name="textareaInput"
+                id="textareaInput"
+                rows="5"
+                placeholder="Placeholder *"
+              ></textarea>
+              <div class="terms-input">
+                <input type="checkbox" name="terms" id="terms" />
+                <span class="checkmark"></span>
+                <label for="terms">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+              </div>
+              <button type="submit" role="button" class="button-primary">
+                Submit
+              </button>
+            </form>
           </div>
-          <form action="" method="">
-            <input type="text" name="" id="" />
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <input type="date" name="" id="" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <div class="terms-and-conditions-input">
-              <input type="checkbox" name="" id="" />
-              <label for=""></label>
-            </div>
-            <button type="submit" role="button" class="button-primary">
-              Submit
-            </button>
-          </form>
         </div>
       </section>
 
@@ -90,7 +115,7 @@
             </p>
           </div>
           <div class="img-container">
-            <img src="" alt="" />
+            <img src="assets/png/section-2.png" alt="Woman on phone" />
           </div>
         </div>
       </section>
@@ -99,8 +124,16 @@
         <div class="container">
           <div class="video">
             <!-- Preview -->
-            <img src="" alt="" class="video-preview" />
-            <img src="" alt="" class="video-custom-play-button" />
+            <img
+              src="assets/png/video-preview.png"
+              alt=""
+              class="video-preview"
+            />
+            <img
+              src="assets/svg/play-button.svg"
+              alt=""
+              class="video-custom-play-button"
+            />
           </div>
           <div class="info">
             <h3>Lorem Ipsum</h3>
@@ -117,25 +150,56 @@
         </div>
       </section>
 
+      <section class="info-img-section" id="laptop-section">
+        <div class="container">
+          <div class="info">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+              ornare sed adipiscing ac sagittis egestas. Risus dolor, senectus
+              mauris tincidunt platea. Tempus viverra amet lacinia velit
+              condimentum sed sollicitudin netus eu. Libero, in commodo quis vel
+              ullamcorper interdum a integer rhoncus. Imperdiet commodo
+              dignissim velit interdum quis.
+            </p>
+          </div>
+          <div class="img-container">
+            <img
+              src="assets/png/section-4.png"
+              alt="Hand pointing laptop screen"
+            />
+          </div>
+        </div>
+      </section>
+
       <section class="statistics-section">
         <div class="container">
           <div class="statistics-card">
             <div class="statistics-card-img">
-              <img src="" alt="" />
+              <img src="assets/svg/bar-graph.svg" alt="" />
             </div>
-            <p class="statistics-card-info"></p>
+            <p class="statistics-card-number">2.620</p>
+            <p class="statistics-card-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
           <div class="statistics-card">
             <div class="statistics-card-img">
-              <img src="" alt="" />
+              <img src="assets/svg/pie-chart.svg" alt="" />
             </div>
-            <p class="statistics-card-info"></p>
+            <p class="statistics-card-number">132.620</p>
+            <p class="statistics-card-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
           <div class="statistics-card">
             <div class="statistics-card-img">
-              <img src="" alt="" />
+              <img src="assets/svg/light-bulb.svg" alt="" />
             </div>
-            <p class="statistics-card-info"></p>
+            <p class="statistics-card-number">13.654</p>
+            <p class="statistics-card-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
         </div>
       </section>
@@ -144,7 +208,7 @@
         <div class="container">
           <div class="card">
             <div class="card-img">
-              <img src="" alt="" />
+              <img src="assets/png/card-img.png" alt="" />
             </div>
             <div class="card-body">
               <h4 class="card-title">Here a card title</h4>
@@ -168,10 +232,13 @@
             </div>
           </div>
           <div class="cta">
-            <h3 class="cta-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h3>
-            <button role="button" class="cta-button">Button</button>
+            <div class="cta-gradient-mask"></div>
+            <div class="cta-content">
+              <h3 class="cta-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <button role="button" class="button-secondary">Button</button>
+            </div>
           </div>
         </div>
       </section>
@@ -180,8 +247,8 @@
     <footer>
       <div class="container">
         <div class="footer-column">
-          <div class="footer-icon">
-            <img src="" alt="" />
+          <div class="footer-logo">
+            <img src="assets/svg/footer-logo.svg" alt="" />
           </div>
           <p class="footer-info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh diam
@@ -190,38 +257,48 @@
         </div>
         <div class="footer-column">
           <div class="footer-menu">
-            <a href="" class="footer-menu-option"></a>
-            <a href="" class="footer-menu-option"></a>
-            <a href="" class="footer-menu-option"></a>
-            <a href="" class="footer-menu-option"></a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
           </div>
         </div>
         <div class="footer-column">
           <div class="footer-menu">
-            <a href="" class="footer-menu-option"></a>
-            <a href="" class="footer-menu-option"></a>
-            <a href="" class="footer-menu-option"></a>
-            <a href="" class="footer-menu-option"></a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
+            <a href="#" class="footer-menu-option">Lorem ipsum</a>
           </div>
         </div>
         <div class="footer-column">
           <div class="footer-social-icons">
             <a href="#" class="social-icon">
-              <img src="" alt="LikedIn Icon" />
+              <img
+                src="assets/svg/social-icons-white/linkedin.svg"
+                alt="LikedIn Link"
+              />
             </a>
             <a href="#" class="social-icon">
-              <img src="" alt="Facebook Icon" />
+              <img
+                src="assets/svg/social-icons-white/fb.svg"
+                alt="Facebook Link"
+              />
             </a>
             <a href="#" class="social-icon">
-              <img src="" alt="Instagram Icon" />
+              <img
+                src="assets/svg/social-icons-white/ig.svg"
+                alt="Instagram Link"
+              />
             </a>
           </div>
         </div>
       </div>
-      <div class="footer-items-list">
-        <a href="#" class="footer-item">Legal & policy</a>
-        <a href="#" class="footer-item">Copyright</a>
-      </div>
     </footer>
+
+    <div class="bottom-bar">
+      <a href="#" class="footer-item">Legal & policy</a>
+      <a href="#" class="footer-item">Copyright</a>
+    </div>
   </body>
 </html>

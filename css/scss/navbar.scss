@@ -1,0 +1,42 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 3rem;
+  background-color: $white;
+  padding: 20px 100px;
+
+  &-logo {
+    width: 85px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 14px;
+  }
+
+  &-social-icons {
+    display: flex;
+    column-gap: 12px;
+  }
+
+  &-options {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+
+    a {
+      @include nav-link;
+      border-bottom: 2px solid transparent;
+      color: $dark-3;
+      text-decoration: none;
+      transition: border-bottom 0.3s ease;
+
+      &:hover {
+        border-bottom: 2px solid $dark-3;
+      }
+    }
+  }
+}

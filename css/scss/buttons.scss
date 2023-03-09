@@ -1,0 +1,39 @@
+.button-primary {
+  @include button-text;
+  background-color: $accent;
+  border-radius: 30px;
+  border: 1px solid $accent;
+  color: $white;
+  cursor: pointer;
+  height: 42px;
+  padding: 10px 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: fit-content;
+
+  &:hover {
+    background-color: transparent;
+    color: $accent;
+  }
+}
+
+.button-secondary {
+  background-color: #1093b5;
+  border-radius: 5px;
+  border: none;
+  color: $light;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  height: 33px;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 84px;
+
+  &:hover {
+    background-color: #0b6b83;
+  }
+}
