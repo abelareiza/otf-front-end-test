@@ -89,10 +89,34 @@
           color: $gray-1;
         }
 
+        select {
+          appearance: none;
+          background-image: url("../assets/svg/custom-select-arrow.svg");
+          background-repeat: no-repeat, repeat;
+          background-position: right 1.25rem top 50%, 0 0;
+          background-size: 20px auto, 100%;
+
+          &::-ms-expand {
+            display: none;
+          }
+        }
+
+        #dateInput {
+          text-transform: uppercase;
+
+          &::-webkit-calendar-picker-indicator {
+            background: url("../assets/svg/custom-calendar.svg") no-repeat;
+            background-size: 20px auto, 100%;
+            width: 20px;
+            height: 20px;
+          }
+        }
+
         textarea {
           @include default-input;
           height: 96px;
           outline: none;
+          resize: none;
 
           &::placeholder {
             color: $gray-1;

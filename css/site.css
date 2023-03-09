@@ -356,6 +356,25 @@ select {
 .hero .form-content form #dateInput {
   color: #c2c2c2;
 }
+.hero .form-content form select {
+  appearance: none;
+  background-image: url("../assets/svg/custom-select-arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 1.25rem top 50%, 0 0;
+  background-size: 20px auto, 100%;
+}
+.hero .form-content form select::-ms-expand {
+  display: none;
+}
+.hero .form-content form #dateInput {
+  text-transform: uppercase;
+}
+.hero .form-content form #dateInput::-webkit-calendar-picker-indicator {
+  background: url("../assets/svg/custom-calendar.svg") no-repeat;
+  background-size: 20px auto, 100%;
+  width: 20px;
+  height: 20px;
+}
 .hero .form-content form textarea {
   font-size: 0.75rem;
   font-style: normal;
@@ -367,6 +386,7 @@ select {
   padding: 8px 16px;
   height: 96px;
   outline: none;
+  resize: none;
 }
 .hero .form-content form textarea::placeholder {
   color: #c2c2c2;
