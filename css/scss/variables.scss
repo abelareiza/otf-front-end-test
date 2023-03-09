@@ -1,0 +1,91 @@
+$light: #ffffff;
+$dark-1: #333333;
+$dark-2: #313131;
+$dark-3: #262626;
+$gray-1: #c2c2c2;
+$gray-2: #4f4f4f;
+$color2: #ff7700;
+$color3: #f10a0a;
+$color4: #3357f8;
+$color2: #f2f2f2;
+
+@mixin big-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.438rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@mixin main-section {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+}
+
+@mixin subheading-1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.188rem;
+  text-transform: uppercase;
+}
+
+@mixin subheading-2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+@mixin subheading-3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.438rem;
+  text-transform: uppercase;
+}
+
+@mixin body-text {
+  font-style: normal;
+  font-weight: 325;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+@mixin bodyt-text--bold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+@mixin buttons {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@mixin caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+@mixin endnote {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+@mixin footnote {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.562rem;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
